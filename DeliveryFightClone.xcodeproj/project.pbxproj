@@ -13,6 +13,11 @@
 		A7AB12A325EBCB19003CE8C7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7AB12A125EBCB19003CE8C7 /* Main.storyboard */; };
 		A7AB12A525EBCB1B003CE8C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7AB12A425EBCB1B003CE8C7 /* Assets.xcassets */; };
 		A7AB12A825EBCB1B003CE8C7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7AB12A625EBCB1B003CE8C7 /* LaunchScreen.storyboard */; };
+		A7AB12B125EBCE6F003CE8C7 /* ConveyorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AB12B025EBCE6F003CE8C7 /* ConveyorView.swift */; };
+		A7AB12B425EBCE98003CE8C7 /* ConveyorView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7AB12B325EBCE98003CE8C7 /* ConveyorView.xib */; };
+		A7AB12B725EBD6FB003CE8C7 /* UpDownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AB12B625EBD6FB003CE8C7 /* UpDownView.swift */; };
+		A7AB12BA25EBD718003CE8C7 /* UpDownView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7AB12B925EBD718003CE8C7 /* UpDownView.xib */; };
+		A7AB12BD25EBDC1D003CE8C7 /* Conveyor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AB12BC25EBDC1D003CE8C7 /* Conveyor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,11 @@
 		A7AB12A425EBCB1B003CE8C7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A7AB12A725EBCB1B003CE8C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A7AB12A925EBCB1B003CE8C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A7AB12B025EBCE6F003CE8C7 /* ConveyorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConveyorView.swift; sourceTree = "<group>"; };
+		A7AB12B325EBCE98003CE8C7 /* ConveyorView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ConveyorView.xib; sourceTree = "<group>"; };
+		A7AB12B625EBD6FB003CE8C7 /* UpDownView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpDownView.swift; sourceTree = "<group>"; };
+		A7AB12B925EBD718003CE8C7 /* UpDownView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UpDownView.xib; sourceTree = "<group>"; };
+		A7AB12BC25EBDC1D003CE8C7 /* Conveyor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Conveyor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +68,12 @@
 			children = (
 				A7AB129B25EBCB19003CE8C7 /* AppDelegate.swift */,
 				A7AB129D25EBCB19003CE8C7 /* SceneDelegate.swift */,
+				A7AB12BC25EBDC1D003CE8C7 /* Conveyor.swift */,
 				A7AB129F25EBCB19003CE8C7 /* ViewController.swift */,
+				A7AB12B025EBCE6F003CE8C7 /* ConveyorView.swift */,
+				A7AB12B325EBCE98003CE8C7 /* ConveyorView.xib */,
+				A7AB12B625EBD6FB003CE8C7 /* UpDownView.swift */,
+				A7AB12B925EBD718003CE8C7 /* UpDownView.xib */,
 				A7AB12A125EBCB19003CE8C7 /* Main.storyboard */,
 				A7AB12A425EBCB1B003CE8C7 /* Assets.xcassets */,
 				A7AB12A625EBCB1B003CE8C7 /* LaunchScreen.storyboard */,
@@ -124,7 +139,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7AB12BA25EBD718003CE8C7 /* UpDownView.xib in Resources */,
 				A7AB12A825EBCB1B003CE8C7 /* LaunchScreen.storyboard in Resources */,
+				A7AB12B425EBCE98003CE8C7 /* ConveyorView.xib in Resources */,
 				A7AB12A525EBCB1B003CE8C7 /* Assets.xcassets in Resources */,
 				A7AB12A325EBCB19003CE8C7 /* Main.storyboard in Resources */,
 			);
@@ -137,7 +154,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7AB12BD25EBDC1D003CE8C7 /* Conveyor.swift in Sources */,
 				A7AB12A025EBCB19003CE8C7 /* ViewController.swift in Sources */,
+				A7AB12B725EBD6FB003CE8C7 /* UpDownView.swift in Sources */,
+				A7AB12B125EBCE6F003CE8C7 /* ConveyorView.swift in Sources */,
 				A7AB129C25EBCB19003CE8C7 /* AppDelegate.swift in Sources */,
 				A7AB129E25EBCB19003CE8C7 /* SceneDelegate.swift in Sources */,
 			);

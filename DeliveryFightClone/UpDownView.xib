@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UpDownView" customModule="DeliveryFightClone" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="143" height="230"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="HKE-an-L50">
+                    <rect key="frame" x="0.0" y="0.0" width="143" height="230"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UBd-tR-b0K">
+                            <rect key="frame" x="0.0" y="0.0" width="143" height="107"/>
+                            <state key="normal" image="upbtn"/>
+                            <connections>
+                                <action selector="didTapUp:" destination="-1" eventType="touchUpInside" id="lM5-9x-2Z4"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R8n-7y-FxS">
+                            <rect key="frame" x="0.0" y="123" width="143" height="107"/>
+                            <state key="normal" image="downbtn"/>
+                            <connections>
+                                <action selector="didTapDown:" destination="-1" eventType="touchUpInside" id="gR9-Mh-dAM"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="HKE-an-L50" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="ZH0-a2-jML"/>
+                <constraint firstAttribute="bottom" secondItem="HKE-an-L50" secondAttribute="bottom" id="eXe-nB-Q7q"/>
+                <constraint firstItem="HKE-an-L50" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="sVG-t3-vsR"/>
+                <constraint firstAttribute="trailing" secondItem="HKE-an-L50" secondAttribute="trailing" id="uNP-Si-eEc"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-190.57971014492756" y="-127.23214285714285"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="downbtn" width="140" height="139"/>
+        <image name="upbtn" width="140" height="140"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

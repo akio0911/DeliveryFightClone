@@ -1,24 +1,112 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DeliveryFightClone" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="DVh-zW-Pg0">
+                                <rect key="frame" x="20" y="217" width="374" height="433"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Njb-HQ-yYN" customClass="ConveyorView" customModule="DeliveryFightClone" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="68.5" height="433"/>
+                                        <color key="backgroundColor" systemColor="systemTealColor"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wWn-3G-ea9" customClass="ConveyorView" customModule="DeliveryFightClone" customModuleProvider="target">
+                                        <rect key="frame" x="76.5" y="0.0" width="68.5" height="433"/>
+                                        <color key="backgroundColor" systemColor="systemTealColor"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a2J-r7-ZdT" customClass="ConveyorView" customModule="DeliveryFightClone" customModuleProvider="target">
+                                        <rect key="frame" x="153" y="0.0" width="68" height="433"/>
+                                        <color key="backgroundColor" systemColor="systemTealColor"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IAG-2W-arg" customClass="ConveyorView" customModule="DeliveryFightClone" customModuleProvider="target">
+                                        <rect key="frame" x="229" y="0.0" width="68.5" height="433"/>
+                                        <color key="backgroundColor" systemColor="systemTealColor"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AtR-Ib-3hy" customClass="ConveyorView" customModule="DeliveryFightClone" customModuleProvider="target">
+                                        <rect key="frame" x="305.5" y="0.0" width="68.5" height="433"/>
+                                        <color key="backgroundColor" systemColor="systemTealColor"/>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="rEZ-MV-Zib">
+                                <rect key="frame" x="20" y="685" width="374" height="87"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3tU-5V-pV3" customClass="UpDownView" customModule="DeliveryFightClone" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="68.5" height="87"/>
+                                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Eg-Hw-qV5" customClass="UpDownView" customModule="DeliveryFightClone" customModuleProvider="target">
+                                        <rect key="frame" x="76.5" y="0.0" width="68.5" height="87"/>
+                                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oeg-DN-ddM" customClass="UpDownView" customModule="DeliveryFightClone" customModuleProvider="target">
+                                        <rect key="frame" x="153" y="0.0" width="68" height="87"/>
+                                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f8x-tm-GyS" customClass="UpDownView" customModule="DeliveryFightClone" customModuleProvider="target">
+                                        <rect key="frame" x="229" y="0.0" width="68.5" height="87"/>
+                                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="doe-kR-n5F" customClass="UpDownView" customModule="DeliveryFightClone" customModuleProvider="target">
+                                        <rect key="frame" x="305.5" y="0.0" width="68.5" height="87"/>
+                                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="rEZ-MV-Zib" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="1gX-cL-F4E"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="rEZ-MV-Zib" secondAttribute="trailing" constant="20" id="IGL-Og-BTj"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="DVh-zW-Pg0" secondAttribute="bottom" constant="212" id="OTL-iz-sTc"/>
+                            <constraint firstItem="DVh-zW-Pg0" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="173" id="XpE-Rl-IKt"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="DVh-zW-Pg0" secondAttribute="trailing" constant="20" id="Zi2-hS-F8s"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="rEZ-MV-Zib" secondAttribute="bottom" constant="90" id="gSt-n9-lxa"/>
+                            <constraint firstItem="DVh-zW-Pg0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="gVl-Ls-qAA"/>
+                            <constraint firstItem="rEZ-MV-Zib" firstAttribute="top" secondItem="DVh-zW-Pg0" secondAttribute="bottom" constant="35" id="s0f-ib-x3r"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="conveyorView1" destination="Njb-HQ-yYN" id="FOe-nJ-fcR"/>
+                        <outlet property="conveyorView2" destination="wWn-3G-ea9" id="m6W-BP-iAA"/>
+                        <outlet property="conveyorView3" destination="a2J-r7-ZdT" id="6ic-pw-zZv"/>
+                        <outlet property="conveyorView4" destination="IAG-2W-arg" id="vLY-gB-rOR"/>
+                        <outlet property="conveyorView5" destination="AtR-Ib-3hy" id="OiI-t7-FdI"/>
+                        <outlet property="upDownView1" destination="3tU-5V-pV3" id="ib0-l3-u0O"/>
+                        <outlet property="upDownView2" destination="0Eg-Hw-qV5" id="44Y-QS-cnr"/>
+                        <outlet property="upDownView3" destination="oeg-DN-ddM" id="5WR-LL-ydR"/>
+                        <outlet property="upDownView4" destination="f8x-tm-GyS" id="HYU-DD-tvb"/>
+                        <outlet property="upDownView5" destination="doe-kR-n5F" id="jip-4j-Dkk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="528.98550724637687" y="80.357142857142847"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.35294117647058826" green="0.78431372549019607" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>
